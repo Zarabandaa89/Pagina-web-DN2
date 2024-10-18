@@ -2,6 +2,7 @@ function toggleMenu() {
     const menu = document.querySelector('.menu');
     menu.classList.toggle('active');
 }
+
 let currentIndex = 0;
 const slideWidth = 330; // Ancho de un testimonio más el margen (300px + 30px)
 const slideInterval = 3000; // Intervalo de tiempo entre cada transición (en milisegundos)
