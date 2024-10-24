@@ -197,6 +197,31 @@ nav {
     color: #555;
 }
 
+.comprar{
+    margin-top: 20px;
+}
+
+.comprar button{
+    background-color: #1f1712;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 15px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Animación suave para el cambio de color */
+    
+}
+
+.comprar a{
+    text-decoration: none;
+    color: white;
+}
+
+.comprar button:hover {
+    background-color: #e86428; /* Color de fondo al pasar el ratón */
+}
+
 @media (max-width: 1024px) {
     .product-grid {
         grid-template-columns: repeat(3, 1fr);
