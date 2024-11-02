@@ -274,3 +274,81 @@ nav {
         font-size: 16px;
     }
 }
+
+/* Estilos de la sección de servicios */
+.servicios .contenedor {
+    display: flex;
+    flex-wrap: wrap; /* Permite que los items se ajusten a múltiples líneas si es necesario */
+    justify-content: center;
+    gap: 5rem;
+    padding: 0 2rem;
+    text-align: center;
+}
+
+.servicio-item {
+    background: #fff;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    padding: 2rem;
+    width: 250px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.servicio-item:hover {
+    transform: scale(1.05);
+}
+
+.servicio-item i {
+    font-size: 3rem;
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+.servicio-item h3 {
+    color: #333;
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.servicio-item p {
+    color: #666;
+    font-size: 0.9rem;
+    line-height: 1.5;
+}
+.titulo-servicios {
+    text-align: center; /* Centra el texto del título */
+    font-size: 2rem; /* Tamaño del texto */
+    color: #333; /* Color del texto */
+    margin-bottom: 2rem; /* Espacio debajo del título */
+}
+
+.footer {
+    background-color: #333; /* Color de fondo */
+    color: #fff; /* Color del texto */
+    text-align: center; /* Centra el texto */
+    padding: 1rem; /* Espaciado interno */
+    position: relative; /* Posición relativa para que esté en el flujo del documento */
+    width: 100%; /* Asegura que el footer ocupe todo el ancho */
+    bottom: 0; /* Lo coloca al final de la página */
+    margin-top: 2rem; /* Espacio superior para separar del contenido anter
+}
+
+.footer p {
+    margin: 0; /* Elimina márgenes por defecto */
+    font-size: 0.9rem; /* Tamaño de fuente */
+}
+
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+    .servicio-item {
+        width: calc(100% - 2rem); /* Asegúrate de que el item ocupe el 100% menos el espacio del gap */
+    }
+}
+html {
+    scroll-behavior: smooth; /* Desplazamiento suave */
+}
+
+
