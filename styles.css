@@ -164,7 +164,7 @@ nav {
 
     .submenu:hover .dropdown {
         left: auto; /* Reset left position for mobile */
-        right: 60px; /* Align dropdown to the right */
+        right: 30px; /* Align dropdown to the right */
         top: 26px; /* Move dropdown up */
     }
 
