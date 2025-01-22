@@ -38,7 +38,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const slideInterval = 3000; // Intervalo de tiempo entre cada transición (en milisegundos)
 
     const slides = document.querySelector('.carousel-slide');
-    const totalSlides = slides.children.length;
+    // const totalSlides = slides.children.length;
 
     // Clona el primer testimonio y lo agrega al final del contenedor
     const firstSlideClone = slides.children[0].cloneNode(true);
