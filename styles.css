@@ -139,7 +139,7 @@ nav {
 }
 
 .dropdown li a {
-    padding: 10px 20px;
+    padding: 8px 20px;
     display: block;
     color: #333;
     text-decoration: none;
@@ -158,7 +158,7 @@ nav {
 @media (max-width: 768px) {
     .dropdown {
         left: auto; /* Reset left position for mobile */
-        right: 60px; /* Align dropdown to the right */
+        right: 30px; /* Align dropdown to the right */
         top: 26px; /* Move dropdown up */
     }
 
@@ -170,7 +170,7 @@ nav {
 
     .dropdown.active {
         left: auto; /* Reset left position for mobile */
-        right: 60px; /* Align dropdown to the right */
+        right: 30px; /* Align dropdown to the right */
         top: 26px; /* Move dropdown up */
     }
 }

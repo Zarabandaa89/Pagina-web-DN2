@@ -9,7 +9,7 @@ body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: #f8f9fa;
 }
-
+/*holaa */
 header {
     background-color: #FF5733;
     color: #fff;
@@ -23,7 +23,7 @@ header {
 }
 
 .logo h1 {
-    font-size: 55px;
+    font-size: 55px !important;
     margin: 0;
 }
 
@@ -60,14 +60,14 @@ nav {
     font-size: 24px;
     cursor: pointer;
     position: absolute;
-    right: 20px;
-    top: 20px;
+    left: 20px;
+    top: 1px;
 }
 
 @media (max-width: 768px) {
     .menu li {
         display: block;
-        margin: 10px 0;
+        margin: 10px 0 !important;
     }
     
     .menu {
@@ -111,15 +111,26 @@ nav {
 .dropdown {
     display: none;
     position: absolute;
-    top: 100%;
-    left: 0;
     background-color: #fff;
-    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
-    list-style: none;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
     padding: 10px 0;
+    z-index: 1000;
     opacity: 0;
-    transform: translateY(-10px);
+    transform: translateY(-50px);
     transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.submenu:hover .dropdown {
+    display: block;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.dropdown.active {
+    display: block;
+    opacity: 1;
+    transform: translateY(0);
 }
 
 .dropdown li {
@@ -130,10 +141,43 @@ nav {
     padding: 10px 20px;
     display: block;
     color: #333;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
 }
 
 .dropdown li a:hover {
     background-color: #f0f0f0;
+}
+
+/* Remove yellow outline on focus */
+.dropdown li a:focus {
+    outline: none;
+}
+/* Responsive styles */
+@media (max-width: 768px) {
+    .dropdown {
+        left: auto; /* Reset left position for mobile */
+        right: 30px; /* Align dropdown to the right */
+        top: 26px; /* Move dropdown up */
+    }
+
+    .submenu:hover .dropdown {
+        left: auto; /* Reset left position for mobile */
+        right: 30px; /* Align dropdown to the right */
+        top: 26px; /* Move dropdown up */
+    }
+
+    .dropdown.active {
+        left: auto; /* Reset left position for mobile */
+        right: 30px; /* Align dropdown to the right */
+        top: 26px; /* Move dropdown up */
+    }
+
+    
+    .dropdown li a {
+        padding: 0px 20px;
+        
+    }
 }
 
 .product-grid {
@@ -272,7 +316,7 @@ nav {
     }
 
     .menu a {
-        font-size: 16px;
+        font-size: 18px;
     }
 }
 /* Estilos de la sección de servicios */

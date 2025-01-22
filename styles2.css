@@ -157,20 +157,25 @@ nav {
 @media (max-width: 768px) {
     .dropdown {
         left: auto; /* Reset left position for mobile */
-        right: 60px; /* Align dropdown to the right */
+        right: 30px; /* Align dropdown to the right */
         top: 26px; /* Move dropdown up */
     }
 
     .submenu:hover .dropdown {
         left: auto; /* Reset left position for mobile */
-        right: 60px; /* Align dropdown to the right */
+        right: 30px; /* Align dropdown to the right */
         top: 26px; /* Move dropdown up */
     }
 
     .dropdown.active {
         left: auto; /* Reset left position for mobile */
-        right: 60px; /* Align dropdown to the right */
+        right: 30px; /* Align dropdown to the right */
         top: 26px; /* Move dropdown up */
+    }
+
+    .dropdown li a {
+        padding: 0px 20px;
+        
     }
 }
 .product-grid {
