@@ -591,3 +591,6 @@ footer .social-icons a:hover {
         padding: 20px; /* Añade padding para más espacio interno */
     }
 }
+html {
+    scroll-behavior: smooth;
+}
